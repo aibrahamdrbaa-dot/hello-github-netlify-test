@@ -1,5 +1,73 @@
 <!doctype html>
-<html lang="ar">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>مرحبا</title></head>
-<body><h1>مرحبا</h1></body>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="تجربة ويب عصرية مصممة بالذكاء الاصطناعي.">
+  <title>مختبر المستقبل — تجربة رقمية</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+    :root{--bg:#070a14;--panel:rgba(17,23,42,.72);--line:rgba(255,255,255,.11);--text:#f7f8ff;--muted:#aab2c8;--cyan:#67e8f9;--violet:#a78bfa;--pink:#f0abfc}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 15% 15%,rgba(103,232,249,.12),transparent 28%),radial-gradient(circle at 85% 10%,rgba(167,139,250,.16),transparent 30%),var(--bg);color:var(--text);font-family:Cairo,system-ui,sans-serif;min-height:100vh;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 36px));margin:auto}
+    nav{height:82px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:5}.brand{display:flex;gap:11px;align-items:center;font-weight:800;letter-spacing:.2px}.mark{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),var(--violet));display:grid;place-items:center;color:#080b16;box-shadow:0 0 32px rgba(103,232,249,.22);font-family:"Space Grotesk",sans-serif}.navlinks{display:flex;gap:26px;color:#b9c1d6;font-size:14px}.navlinks a:hover{color:#fff}
+    .hero{padding:92px 0 82px;text-align:center;position:relative}.orb{position:absolute;width:340px;height:340px;border-radius:50%;filter:blur(55px);opacity:.16;background:linear-gradient(135deg,var(--cyan),var(--violet));left:50%;top:40px;transform:translateX(-50%);z-index:-1}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:rgba(255,255,255,.045);padding:8px 13px;border-radius:999px;color:#dce2f2;font-size:13px;backdrop-filter:blur(12px)}.dot{width:7px;height:7px;border-radius:50%;background:var(--cyan);box-shadow:0 0 12px var(--cyan)}
+    h1{font-size:clamp(48px,8vw,88px);line-height:1.02;letter-spacing:-3px;margin:26px auto 22px;max-width:900px;font-weight:800}h1 span{background:linear-gradient(90deg,var(--cyan),#fff,var(--pink));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .lead{max-width:650px;margin:0 auto;color:var(--muted);font-size:18px;line-height:1.9}.actions{display:flex;justify-content:center;gap:12px;margin-top:34px;flex-wrap:wrap}.btn{padding:13px 21px;border-radius:14px;font-weight:700;font-size:14px;border:1px solid var(--line);transition:.2s;display:inline-flex;align-items:center;gap:8px}.btn.primary{background:#f5f7ff;color:#0b1020;border-color:#fff}.btn.secondary{background:rgba(255,255,255,.045);color:#fff}.btn:hover{transform:translateY(-2px);box-shadow:0 12px 35px rgba(0,0,0,.22)}
+    .showcase{margin:5px auto 0;border:1px solid var(--line);border-radius:28px;padding:10px;background:rgba(255,255,255,.035);box-shadow:0 35px 100px rgba(0,0,0,.35);max-width:980px}.screen{border-radius:21px;min-height:310px;background:linear-gradient(135deg,#11182d,#0a0e1b);position:relative;overflow:hidden;padding:28px;text-align:right}.screen:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;left:-100px;bottom:-180px;background:radial-gradient(circle,rgba(103,232,249,.22),transparent 68%)}.topline{display:flex;justify-content:space-between;align-items:center}.mini{height:9px;width:9px;border-radius:50%;background:var(--cyan);box-shadow:0 0 16px var(--cyan)}.lines{display:grid;gap:10px;margin-top:70px;max-width:520px}.line{height:12px;border-radius:20px;background:linear-gradient(90deg,rgba(255,255,255,.16),rgba(255,255,255,.035));}.line.big{height:48px;width:72%;background:linear-gradient(90deg,rgba(103,232,249,.75),rgba(167,139,250,.4),rgba(255,255,255,.05))}
+    .section{padding:80px 0}.section h2{font-size:32px;margin:0 0 10px}.section>p{color:var(--muted);margin:0 0 30px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:25px;backdrop-filter:blur(16px);transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(103,232,249,.28)}.icon{width:45px;height:45px;border-radius:14px;display:grid;place-items:center;background:rgba(255,255,255,.07);font-size:20px;margin-bottom:22px}.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);line-height:1.8;font-size:14px}
+    .cta{border:1px solid var(--line);border-radius:28px;padding:45px;text-align:center;background:linear-gradient(135deg,rgba(103,232,249,.07),rgba(167,139,250,.08));margin:20px 0 80px}.cta h2{margin:0 0 10px;font-size:32px}.cta p{color:var(--muted);margin:0 0 25px}
+    footer{border-top:1px solid var(--line);padding:25px 0 35px;color:#778199;font-size:13px;display:flex;justify-content:space-between;gap:15px}
+    @media(max-width:760px){.navlinks{display:none}.hero{padding:65px 0}.cards{grid-template-columns:1fr}h1{letter-spacing:-2px}.lead{font-size:16px}.showcase{border-radius:20px}.screen{min-height:240px}.cta{padding:32px 22px}footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a class="brand" href="#"><span class="mark">✦</span><span>مختبر المستقبل</span></a>
+      <div class="navlinks"><a href="#about">الفكرة</a><a href="#features">المزايا</a><a href="#start">ابدأ</a></div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="orb"></div>
+        <div class="eyebrow"><span class="dot"></span> تجربة رقمية جديدة</div>
+        <h1>نبني أفكارًا <span>تبدو من المستقبل.</span></h1>
+        <p class="lead">واجهة بسيطة، سريعة، وأنيقة تجمع بين التصميم العصري وروح الذكاء الاصطناعي — لتكون البداية لأي فكرة رقمية.</p>
+        <div class="actions">
+          <a class="btn primary" href="#start">لنبدأ ✦</a>
+          <a class="btn secondary" href="#features">اكتشف الفكرة ↓</a>
+        </div>
+      </section>
+
+      <section class="showcase" id="about" aria-label="معاينة التصميم">
+        <div class="screen">
+          <div class="topline"><span style="font-weight:700">DIGITAL LAB</span><span class="mini"></span></div>
+          <div class="lines"><div class="line big"></div><div class="line" style="width:88%"></div><div class="line" style="width:62%"></div></div>
+        </div>
+      </section>
+
+      <section class="section" id="features">
+        <h2>كل شيء واضح. بدون تعقيد.</h2>
+        <p>ثلاثة مبادئ صممنا حولها هذه التجربة.</p>
+        <div class="cards">
+          <article class="card"><div class="icon">⚡</div><h3>سريع</h3><p>صفحة خفيفة ومهيأة للعمل بسلاسة على الهاتف والكمبيوتر.</p></article>
+          <article class="card"><div class="icon">◈</div><h3>عصري</h3><p>ألوان عميقة، تأثيرات زجاجية، وتفاصيل دقيقة تعطي الموقع شخصية.</p></article>
+          <article class="card"><div class="icon">⌁</div><h3>مرن</h3><p>بنية بسيطة يمكن تطويرها لاحقًا إلى مشروع أو منتج كامل.</p></article>
+        </div>
+      </section>
+
+      <section class="cta" id="start">
+        <h2>جاهز نبني الشيء الحقيقي؟</h2>
+        <p>هذه مجرد البداية — التصميم الآن جاهز ليكبر مع فكرتك.</p>
+        <a class="btn primary" href="mailto:hello@example.com">تواصل معنا ↗</a>
+      </section>
+    </main>
+
+    <footer><span>© 2026 مختبر المستقبل</span><span>مصمم للويب الحديث ✦</span></footer>
+  </div>
+</body>
 </html>
